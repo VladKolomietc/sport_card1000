@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display&family=Roboto&family=Roboto+Slab:wght@700&family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@300&display=swap');
+
 body {
   font-family: 'Averia Libre', display;
 }
@@ -19,7 +19,6 @@ header {
     display: flex;
     height: 1000px;
     width: 1000px;
-    background: #000;
     flex-wrap: wrap;
     
     
@@ -44,13 +43,15 @@ header {
 }
 .card:nth-child(1), .card:nth-child(5), .card:nth-child(9) {
     margin-left: 55px;
+
 }
  .card:nth-child(9), .card:nth-child(10){
     margin-bottom: 201px;
 }
 
 .card {
-    margin: 15px;
+
+    margin: 30px 15px 15px 15px;
     width: 200px;
     height: 200px;
     
@@ -60,7 +61,8 @@ header {
     color: rgba(47, 79, 79, 1);
     font-size: 20px;
     font-weight: bold;
-    font-family: 'Roboto';
+    font-family: 'Arial';
+    margin-top: 3px;
 }
 .number {
     display: flex;
@@ -73,8 +75,20 @@ header {
     text-align: center;
     padding-top: 1px;
     font-size: 16px;
-    font-family: 'Roboto';
+    font-family: 'Arial';
     font-weight: bold;
     margin-top: -30px;
     color: rgba(139, 0, 0, 1);
+}
+/*hover*/
+
+.how {
+    height: 0;
+    width: 0;
+    transition-duration: 1s;
+    transform: scale(1);
+}
+.how:hover {   
+    transition-duration: 1s;
+    transform: scale(1.2);
 }
